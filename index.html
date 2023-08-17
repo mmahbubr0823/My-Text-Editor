@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Text Editor</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome  -->
+
+    <script src="https://kit.fontawesome.com/dd957ca9cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="border border-red-300 mx-80 mt-10 bg-slate-300 px-5">
+        <h1 class="text-center my-5 font-semibold text-2xl">My Text Editor</h1>
+        <div class="border border-black px-5 mb-5">
+            <div class="flex justify-between items-center mb-5 p-3 border-b-2 border-black">
+                <div class="flex justify-between gap-4">
+                    <button id="bold" class="font-bold">B</button>
+                    <button id="italic" class="italic">I</button>
+                    <button id="underline" class="underline">U</button>
+                </div>
+                <div class="flex justify-between gap-4">
+                    <button id="left"><i class="fa-solid fa-align-left"></i></button>
+                    <button id="right"><i class="fa-solid fa-align-right"></i></button>
+                    <button id="center"><i class="fa-solid fa-align-center"></i></button>
+                    <button id="justify"><i class="fa-solid fa-align-justify"></i></button>
+                </div>
+                <div class="flex justify-between items-center gap-4">
+                   <button id="case">aA</button>
+                   <div class="flex gap-2 border border-black p-1">
+                    <h1 id="text-value" class="bg-amber-100 p-1">17</h1>
+                        <button id="btn-plus"><i class="fa-solid fa-circle-up"></i></button>
+                    <button id="btn-minus"><i class="fa-solid fa-circle-down "></i></button>
+                   </div>
+                   <label for="color-picker">Color:</label>
+                   <input type="color" id="color-picker">
+                </div>
+            </div>
+            <textarea class="ps-2 pt-2 mb-4 w-[750px] h-72" name="text" id="text-field" cols="100" rows="10"></textarea>
+        </div>
+    </section>
+    <script src="sript.js"></script>
+</body>
+</html>
